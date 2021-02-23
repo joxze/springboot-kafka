@@ -10,9 +10,4 @@ public class KafkaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(KafkaApplication.class, args);
 	}
-
-	@KafkaListener(id = "kafka", topics = "belajar")
-	public void kafkakonsumer(String in) {
-		System.out.println("Data yang ditarik : " + in);
-	}
 }
