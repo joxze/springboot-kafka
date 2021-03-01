@@ -1,4 +1,4 @@
-FROM docker.doku.com/doku-jdk11-centos7
+FROM openjdk:11
 
 USER root
 ARG JAR_FILE=target/*.jar

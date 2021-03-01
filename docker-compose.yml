@@ -1,11 +1,11 @@
 version: '3'
 services:
-  doku-kafka.apple-s-au.svc:
+  kafka-zookeeper:
     image: johnnypark/kafka-zookeeper
-    container_name: doku-kafka.apple-s-au.svc
+    container_name: kafka-zookeeper
     environment:
       - CONTAINER_ENV=dev
-      - ADVERTISED_HOST=doku-kafka.apple-s-au.svc
+      - ADVERTISED_HOST=kafka-zookeeper
       - AUTO_CREATE_TOPICS=true
 
   springboot-kafka:
